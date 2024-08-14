@@ -1,0 +1,28 @@
+{% extends 'app/main/base.html' %}
+{% load static %}
+
+{% block title %} Register {% endblock title %}
+
+
+{% block content %}
+
+
+<div class="hero-wrap" style="background-image: url('{% static 'app/images/bg_5.jpg' %}');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
+          <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
+          	<div class="text">
+	            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{% url 'index' %}">Home</a></span> <span>Login</span></p>
+	            <h1 class="mb-4 bread">Register</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    {% include 'app/inpage/register_info.html' %}
+
+
+{% endblock content %}

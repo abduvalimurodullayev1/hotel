@@ -1,0 +1,20 @@
+{% load static %}
+<div class="col-sm col-md-6 col-lg-4 ftco-animate">
+		    				<div class="room">
+		    					<a href="{% url 'room-detail' room.id%}" class="img d-flex justify-content-center align-items-center" style="background-image: url({{ room.image.url }});">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+		    							<span class="icon-search2"></span>
+		    						</div>
+		    					</a>
+		    					<div class="text p-3 text-center">
+		    						<h3 class="mb-3"><a href="{% url 'room-detail' room.id%}">{{ room.title }}</a></h3>
+		    						<p><span class="price mr-2">${{ room.price }}</span> <span class="per">per night</span></p>
+		    						<ul class="list">
+		    							<li><span>Max:</span> {{ room.person }} Persons</li>
+		    							<li><span>View:</span> {{ room.view }}</li>
+		    						</ul>
+		    						<hr>
+		    						<p class="pt-1"><a href="{% url 'room-detail' room.id %}" class="btn-custom">Book Now <span class="icon-long-arrow-right"></span></a></p>
+		    					</div>
+		    				</div>
+		    			</div>

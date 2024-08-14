@@ -1,0 +1,13 @@
+<div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="{% url 'blog-detail' blog.id%}" class="block-20" style="background-image: url('{{ blog.image.url }}');">
+              </a>
+              <div class="text mt-3 d-block">
+                <h3 class="heading mt-3"><a href="{% url 'blog-detail' blog.id%}">{{ blog.title }}</a></h3>
+                <div class="meta mb-3">
+                  <div><a href="{% url 'blog-detail' blog.id%}">{{ blog.created_at }}</a></div>
+                  <div><a href="{% url 'blog-detail' blog.id%}" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+              </div>
+            </div>
+          </div>

@@ -1,0 +1,18 @@
+{% extends 'app/main/base.html' %}
+{% load static %}
+
+{% block title %} WebEnter. {% endblock title %}
+
+
+{% block content %}
+
+    {% include 'app/inpage/startwrap.html' %}
+
+    {% include 'app/inpage/statistics.html' %}
+
+    {% include 'app/inpage/welcome.html' %}
+    
+    {% include 'app/inpage/mainfeatures.html' %}
+
+    {% include 'app/inpage/instagram.html' %}
+{% endblock content %}

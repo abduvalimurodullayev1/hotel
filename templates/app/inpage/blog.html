@@ -1,0 +1,15 @@
+{% load static %}
+<section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2>Recent Blog</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+            {% for blog in blogs %}
+            	{% include 'app/inpage/blog-single.html' %}
+            {% endfor %}
+        </div>
+      </div>
+    </section>
