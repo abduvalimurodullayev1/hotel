@@ -60,12 +60,19 @@ Run the development server:
 bash
 
 python manage.py runserver
+
 Usage
 Visit http://127.0.0.1:8000/ in your browser to access the application.
 Admin panel is available at http://127.0.0.1:8000/admin/.
+
+
 Notes
 This project does not include an .env file. Ensure you configure your environment variables as needed.
+
+
 Ensure to have Python 3.10+ installed.
+
+
 License
 This project is licensed under the MIT License.
 
